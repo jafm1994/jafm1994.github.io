@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+  <!-- Place favicon.ico in the root directory -->
+  <script type="text/javascript" src="http://fast.fonts.com/jsapi/8b6e35d9-c4ea-4f5d-aaf7-efa0286e499e.js"></script>
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> --> 
+  <!-- Hoja del estilo creado a partir de una guía de estilo -->
+<!--   <link id="css1" rel="stylesheet" href="css/main.css"> -->
+  <!-- Hoja del estilo creado a partir de la película -->
+  <link id="css2" rel="stylesheet" href="css/second.css"> 
+  <!-- <link rel="stylesheet" href="css/css2.css"> --> 
+   <script type="text/javascript">
+   	 if(document.getElementById('css2'))
+	 {
+       function borrar() {
+         document.getElementById('sinopsis').style.visibility='hidden';
+         document.getElementById('sinopsis').style.display='none';
+		 document.getElementById('necesidades').style.visibility='hidden';
+         document.getElementById('necesidades').style.display='none';
+		 document.getElementById('tecnologias').style.visibility='hidden';
+         document.getElementById('tecnologias').style.display='none';
+		 document.getElementById('impacto').style.visibility='hidden';
+         document.getElementById('impacto').style.display='none';
+		 document.getElementById('referencia').style.visibility='hidden';
+         document.getElementById('referencia').style.display='none';
+      };
+      function visualiza_sinopsis() {
+		 borrar();
+         document.getElementById('sinopsis').style.visibility='visible';
+         document.getElementById('sinopsis').style.display='block';
+		 location.href = "#sinopsis";
+      };
+	  function visualiza_necesidades() {
+		 borrar();
+         document.getElementById('necesidades').style.visibility='visible';
+         document.getElementById('necesidades').style.display='block';
+		 location.href = "#necesidades";
+      };
+	  function visualiza_tecnologias() {
+		 borrar();
+         document.getElementById('tecnologias').style.visibility='visible';
+         document.getElementById('tecnologias').style.display='block';
+		 location.href = "#tecnologias";
+      };
+	  function visualiza_impacto() {
+		 borrar();
+         document.getElementById('impacto').style.visibility='visible';
+         document.getElementById('impacto').style.display='block';
+		 location.href = "#impacto";
+      };
+	  function visualiza_ref() {
+		 borrar();
+         document.getElementById('referencia').style.visibility='visible';
+         document.getElementById('referencia').style.display='block';
+		 location.href = "#referencia";
+      };
+	  function abrirTrailer(){
+	  	window.open('https://www.youtube.com/watch?v=xejjA2AFO5I', '_blank');
+	  };
+	 }
+		
+   </script>
+</head>
+<body>
+<!--Una plantilla HTML5 para películas-->
+<!--Adaptación de HTML5 boilerplate (html5boilerplate.com)-->
+<!--Se trata de una plantilla para la elaboración de una ficha de análisis de una película o serie para el proyecto Interfaces Imaginadas-->
+  <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+<!--Secciones-->
+<header id="headerCenter">  
+<nav id="home">
+  <ul>
+    <li><h1 class="large"><a href="#top" title="">Black Mirror</a></h1></li>
+  </ul>
+</nav>
+<nav id="links">
+  <ul>
+   <a onClick="visualiza_sinopsis()" href="#sinopsis"> <li>Sinopsis</li></a>
+    <a onClick="visualiza_necesidades()" href="#necesidades"><li>Necesidades</li></a>
+    <a onClick="visualiza_tecnologias()" href="#tecnologias"><li>Tecnologías</li></a>
+    <a onClick="visualiza_impacto()" href="#impacto"><li>Impacto</li></a>
+    <a onClick="visualiza_ref()" href="#referencia"><li>Referencias</li></a>
+  </ul>
+</nav>  
+</header> 
+
+<!--Sinopsis-->
+<!--<div class="section" id="Sinopsis">
+  <h2 class="section_title">Sinopsis</h2>
+  <p class="section_text">
+    Lorem ipsum dolor sit amet, quo essent civibus ad. Cu eam dolorum omittantur, vix id paulo platonem, laudem intellegam sea an. Ut amet percipit ius, volumus platonem omittantur usu ad, eu virtute appetere persecuti his. Et utinam conceptam repudiandae vim, vel ut ipsum dicat. Detracto nominavi electram an mei, nam an minim animal eloquentiam, alia libris bonorum usu an. 
+  </p>
+  
+</div>-->
+ <p><div id="top"></div></p> 
+ 
+ <section id="fotos">
+ 	<div onClick="visualiza_sinopsis()" id="fotoSinopsis"><span></span></div>
+    <div onClick="visualiza_necesidades()" id="fotoNecesidades"><span></span></div>
+    <div onClick="visualiza_impacto()" id="fotoImpacto"><span></span></div>
+     <div onClick="visualiza_tecnologias()" id="fotoTecnologias"><span></span></div>
+    <div onClick="visualiza_ref()" id="fotoReferencia"><span></span></div>
+    <div onClick="abrirTrailer()" id="fotoPortada"><span></span></div>
+ </section>
+ 
+<!--Sinopsis estructurado con tags HTML5-->
+ <section class="principal"  id="sinopsis">
+
+     <header class="titulo">
+      <div class="circleBase type1 titulo"></div>
+      <h1>Sinopsis</h1>   
+     </header>
+  <article class="articulo" >
+  	<h2>Cuenta la historia de Bella en un mundo pos apocalíptico</h2>
+    <p>El capitulo comienza con Bella, Tony y Clarke dirigiendose en coche a un almacen abandonado en busca de un regalo misterioso y mientras Bella y Tony entran en el almacen Clarke se queda en la entrada intentando robar una furgoneta, dentro del almacen Bella encuentra la caja que buscaban pero al moverla Tony se produce una explosion y es donde se encuentras con el "perro" robot.></p>
+  
+<!--     Una manera de conseguir navegación "inline" dentro de la página. Puedes habilitar otras -->
+   </article>
+</section> 
+
+
+<section class="principal" id="necesidades">
+  <header class="titulo">
+    <div class="circleBase type1 titulo"></div>
+    <h1>Necesidades</h1>
+  </header>
+  <hr/> 
+  <article class="articulo">
+    <header>
+        <p>El capitulo se desarrolla en un futuro pos acopcalíptico en el los humanos tienen que tratar de sobrevivir a una plaga de “perros” robóticos que buscan acabar con los humanos.<p>
+    </header>
+      <div class="dispositivo">
+        <h3>Dispositivo (Interfaz/tecnología):Hackeadora Coches</h3>
+        <h3>Aparicion:0:04:50</h3>
+        <img src="img/hackCoche.png" alt="Hackeadora Coches"/>
+      </div>
+      <div class="dispositivo">
+        <h3>Dispositivo (Interfaz/tecnología):Perro Robotico</h3>
+        <h3>Aparicion:0:06:37</h3>
+        <img src="img/perroRobot.png" alt="Perro Robotico"/>
+      </div>
+      <div class="dispositivo">
+        <h3>Dispositivo (Interfaz/tecnología):Microchip Localizador</h3>
+        <h3>Aparicion:0:06:40</h3>
+        <img src="img/metrallaLoc.png" alt="Microchip Localizador"/>
+      </div>
+  </article>
+</section> 
+
+<!--Tecnologías-->
+<section class="principal" id="tecnologias">
+  <header class="titulo">
+  <div class="circleBase type1 titulo"></div>
+  <h1 class="section_title">Tecnologías</h1>
+  </header>
+  <article class="articulo">
+          <section>
+          <header>
+          <h2 class="section_title">Tecnologías involucradas</h2>
+          </header>
+            <article>
+         <p class="section_text">Las tecnologías necesarias para la creación de este perro robotico necesitaríamos un software de inteligencia mucho más potente de lo actualmente poseemos y quizás en cuanto a hardware no estamos tan lejos de su creación ya que se por ejemplo los chips de seguimiento que podemos ver en el capitulo es algo que ya existe.
+         </p> 
+         <p>On Board Diagnostics es un standard en la conexion de dispositivos para tomar controles de la consola de los coches</p>
+           </article>        
+   		 </section>
+           <section>
+          <header>
+          <h2 class="section_title">Tecnologías imaginadas en el momento de la producción</h2>
+          </header>
+            <article>
+         <p class="section_text">Quizas la interfaz imaginada que mas destaca en el capitulo la podemos ver en la inteligencia artificial que posee el perro robotico.</p> 
+           </article>
+
+    </section>
+  </article>
+</section>
+  
+<section class="principal" id="impacto">
+  <header class="titulo">
+  <div class="circleBase type1 titulo"></div>
+  <h1 class="section_title">Impacto</h1>
+  </header>
+  <article class="articulo">  <p class="section_text">Al ser un capitulo tan nuevo todavía no podemos medir de su repercusión en la vida real pero quizás su influencia vaya muy de la mano del desarrollo del robot SpotMini. Aunque quizás lo que actualmente mas destaque del capitulo sea las malas criticas que ha recibido y haya sido nombrado como el peor capitulo de la historia de black mirror.
+  </p>
+</article>
+
+
+</section>
+
+  <!-- Se deben hacer referencias cruzadas con la bibliografía o recursos en 
+  internet utilizados para realizar el análisis. Para ello se usará un identificador
+  en la lista de referencias de la forma: id = "refX", donde X es un número secuencial
+  y en el texto se incluirá la referencia cruzada, de la siguiente forma:
+   [<a href="#refX">X</a>]
+  -->
+
+
+
+<section class="principal" id="referencia">
+   <header class="titulo">
+  <div class="circleBase type1 titulo"></div>
+  <h1 class="section_title">Referencias</h1>
+  </header>
+  <article class="articulo">
+     <div class="referencia" id="ref1">
+     <div class="refIzq">
+      <h3 class="autor">OkDiario</h3>
+      <p class="visita">(última visita: 25/03/2018)</p>
+      </div>
+      <div class="refDer">
+        <p >El perro robot de Black Mirror ya es una realidad gracias a Boston Dynamics</p>
+      <p class="link"><a href=" https://okdiario.com/ciencia/2018/02/27/perro-robot-black-mirror-boston-dynamics-1879864"> https://okdiario.com/ciencia/2018/02/27/perro-robot-black-mirror-boston-dynamics-1879864</a></p>
+      </p>
+      </div>
+    </div>
+    <div id="ref2">
+      <div class="referencia" id="ref1">
+     <div class="refIzq">
+          <h3 class="autor">rastreadordecelular.org</h3>
+          <p class="visita">(última visita: 25/03/2018)</p>
+      </div>
+      <div class="refDer">
+          <p>Chip de rastreo ¿Qué es y para qué sirve?</p>
+          <p class="link"><a href="http://rastreadordecelular.org/chip-de-rastreo-que-es/">	http://rastreadordecelular.org/chip-de-rastreo-que-es</a></p>
+      </div>
+     
+    </div>
+
+     <div id="ref3">
+           <div class="referencia" id="ref1">
+   		   <div class="refIzq">
+     		 <h3 class="autor">Boston Dynamics</h3>
+           </div>
+           <div class="refDer">
+              <p >The New SpotMini</p>
+              <p class="link"><video width="640" height="480" controls>
+          <source src="img/The New SpotMini.mp4" type="video/mp4"></video></p>
+          </div>
+    </div>
+    
+   
+  </article>
+</div>
+</section>
+
+<footer> 
+<!--		<div><a href="http://usal.es/" target="_blank">Usal.es</a>
+		</div>
+		<div>	<a href="https://www.netflix.com/es/title/70264888" target="_blank">Black Mirror</a>
+		</div>	
+        <div>	<a href="mailto@jafm1994@usal.es" target="_blank">Jose Antonio Fernandez Molina</a>
+		</div>	
+        
+-->
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <!-- <script src="js/plugins.js"></script> -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--   <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+
+</body>
+</html>
