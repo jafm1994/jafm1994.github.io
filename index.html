@@ -1,281 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
-  <!-- Place favicon.ico in the root directory -->
-  <script type="text/javascript" src="http://fast.fonts.com/jsapi/8b6e35d9-c4ea-4f5d-aaf7-efa0286e499e.js"></script>
 
-  <!-- <link rel="stylesheet" href="css/normalize.css"> --> 
-  <!-- Hoja del estilo creado a partir de una guía de estilo -->
-<!--   <link id="css1" rel="stylesheet" href="css/main.css"> -->
-  <!-- Hoja del estilo creado a partir de la película -->
-  <link id="css2" rel="stylesheet" href="css/second.css"> 
-  <!-- <link rel="stylesheet" href="css/css2.css"> --> 
-   <script type="text/javascript">
-   	 if(document.getElementById('css2'))
-	 {
-       function borrar() {
-         document.getElementById('sinopsis').style.visibility='hidden';
-         document.getElementById('sinopsis').style.display='none';
-		 document.getElementById('necesidades').style.visibility='hidden';
-         document.getElementById('necesidades').style.display='none';
-		 document.getElementById('tecnologias').style.visibility='hidden';
-         document.getElementById('tecnologias').style.display='none';
-		 document.getElementById('impacto').style.visibility='hidden';
-         document.getElementById('impacto').style.display='none';
-		 document.getElementById('referencia').style.visibility='hidden';
-         document.getElementById('referencia').style.display='none';
-      };
-      function visualiza_sinopsis() {
-		 borrar();
-         document.getElementById('sinopsis').style.visibility='visible';
-         document.getElementById('sinopsis').style.display='block';
-		 location.href = "#sinopsis";
-      };
-	  function visualiza_necesidades() {
-		 borrar();
-         document.getElementById('necesidades').style.visibility='visible';
-         document.getElementById('necesidades').style.display='block';
-		 location.href = "#necesidades";
-      };
-	  function visualiza_tecnologias() {
-		 borrar();
-         document.getElementById('tecnologias').style.visibility='visible';
-         document.getElementById('tecnologias').style.display='block';
-		 location.href = "#tecnologias";
-      };
-	  function visualiza_impacto() {
-		 borrar();
-         document.getElementById('impacto').style.visibility='visible';
-         document.getElementById('impacto').style.display='block';
-		 location.href = "#impacto";
-      };
-	  function visualiza_ref() {
-		 borrar();
-         document.getElementById('referencia').style.visibility='visible';
-         document.getElementById('referencia').style.display='block';
-		 location.href = "#referencia";
-      };
-	  function abrirTrailer(){
-	  	window.open('https://www.youtube.com/watch?v=xejjA2AFO5I', '_blank');
-	  };
-	 }
-		
-   </script>
-</head>
-<body>
-<!--Una plantilla HTML5 para películas-->
-<!--Adaptación de HTML5 boilerplate (html5boilerplate.com)-->
-<!--Se trata de una plantilla para la elaboración de una ficha de análisis de una película o serie para el proyecto Interfaces Imaginadas-->
-  <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-<!--Secciones-->
-<header id="headerCenter">  
-<nav id="home">
-  <ul>
-    <li><h1 class="large"><a href="#top" title="">Black Mirror</a></h1></li>
-  </ul>
-</nav>
-<nav id="links">
-  <ul>
-   <a onClick="visualiza_sinopsis()" href="#sinopsis"> <li>Sinopsis</li></a>
-    <a onClick="visualiza_necesidades()" href="#necesidades"><li>Necesidades</li></a>
-    <a onClick="visualiza_tecnologias()" href="#tecnologias"><li>Tecnologías</li></a>
-    <a onClick="visualiza_impacto()" href="#impacto"><li>Impacto</li></a>
-    <a onClick="visualiza_ref()" href="#referencia"><li>Referencias</li></a>
-  </ul>
-</nav>  
-</header> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!--Sinopsis-->
-<!--<div class="section" id="Sinopsis">
-  <h2 class="section_title">Sinopsis</h2>
-  <p class="section_text">
-    Lorem ipsum dolor sit amet, quo essent civibus ad. Cu eam dolorum omittantur, vix id paulo platonem, laudem intellegam sea an. Ut amet percipit ius, volumus platonem omittantur usu ad, eu virtute appetere persecuti his. Et utinam conceptam repudiandae vim, vel ut ipsum dicat. Detracto nominavi electram an mei, nam an minim animal eloquentiam, alia libris bonorum usu an. 
-  </p>
-  
-</div>-->
- <p><div id="top"></div></p> 
- 
- <section id="fotos">
- 	<div onClick="visualiza_sinopsis()" id="fotoSinopsis"><span></span></div>
-    <div onClick="visualiza_necesidades()" id="fotoNecesidades"><span></span></div>
-    <div onClick="visualiza_impacto()" id="fotoImpacto"><span></span></div>
-     <div onClick="visualiza_tecnologias()" id="fotoTecnologias"><span></span></div>
-    <div onClick="visualiza_ref()" id="fotoReferencia"><span></span></div>
-    <div onClick="abrirTrailer()" id="fotoPortada"><span></span></div>
- </section>
- 
-<!--Sinopsis estructurado con tags HTML5-->
- <section class="principal"  id="sinopsis">
+    <title>SeriesUsal</title>
 
-     <header class="titulo">
-      <div class="circleBase type1 titulo"></div>
-      <h1>Sinopsis</h1>   
-     </header>
-  <article class="articulo" >
-  	<h2>Cuenta la historia de Bella en un mundo pos apocalíptico</h2>
-    <p>El capitulo comienza con Bella, Tony y Clarke dirigiendose en coche a un almacen abandonado en busca de un regalo misterioso y mientras Bella y Tony entran en el almacen Clarke se queda en la entrada intentando robar una furgoneta, dentro del almacen Bella encuentra la caja que buscaban pero al moverla Tony se produce una explosion y es donde se encuentras con el "perro" robot.></p>
-  
-<!--     Una manera de conseguir navegación "inline" dentro de la página. Puedes habilitar otras -->
-   </article>
-</section> 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
 
-<section class="principal" id="necesidades">
-  <header class="titulo">
-    <div class="circleBase type1 titulo"></div>
-    <h1>Necesidades</h1>
-  </header>
-  <hr/> 
-  <article class="articulo">
-    <header>
-        <p>El capitulo se desarrolla en un futuro pos acopcalíptico en el los humanos tienen que tratar de sobrevivir a una plaga de “perros” robóticos que buscan acabar con los humanos.<p>
-    </header>
-      <div class="dispositivo">
-        <h3>Dispositivo (Interfaz/tecnología):Hackeadora Coches</h3>
-        <h3>Aparicion:0:04:50</h3>
-        <img src="img/hackCoche.png" alt="Hackeadora Coches"/>
-      </div>
-      <div class="dispositivo">
-        <h3>Dispositivo (Interfaz/tecnología):Perro Robotico</h3>
-        <h3>Aparicion:0:06:37</h3>
-        <img src="img/perroRobot.png" alt="Perro Robotico"/>
-      </div>
-      <div class="dispositivo">
-        <h3>Dispositivo (Interfaz/tecnología):Microchip Localizador</h3>
-        <h3>Aparicion:0:06:40</h3>
-        <img src="img/metrallaLoc.png" alt="Microchip Localizador"/>
-      </div>
-  </article>
-</section> 
-
-<!--Tecnologías-->
-<section class="principal" id="tecnologias">
-  <header class="titulo">
-  <div class="circleBase type1 titulo"></div>
-  <h1 class="section_title">Tecnologías</h1>
-  </header>
-  <article class="articulo">
-          <section>
-          <header>
-          <h2 class="section_title">Tecnologías involucradas</h2>
-          </header>
-            <article>
-         <p class="section_text">Las tecnologías necesarias para la creación de este perro robotico necesitaríamos un software de inteligencia mucho más potente de lo actualmente poseemos y quizás en cuanto a hardware no estamos tan lejos de su creación ya que se por ejemplo los chips de seguimiento que podemos ver en el capitulo es algo que ya existe.</p> 
-           </article>        
-   		 </section>
-           <section>
-          <header>
-          <h2 class="section_title">Tecnologías imaginadas en el momento de la producción</h2>
-          </header>
-            <article>
-         <p class="section_text">Quizas la interfaz imaginada que mas destaca en el capitulo la podemos ver en la inteligencia artificial que posee el perro robotico.</p> 
-           </article>
-
-    </section>
-  </article>
-</section>
-  
-<section class="principal" id="impacto">
-  <header class="titulo">
-  <div class="circleBase type1 titulo"></div>
-  <h1 class="section_title">Impacto</h1>
-  </header>
-  <article class="articulo">  <p class="section_text">Al ser un capitulo tan nuevo todavía no podemos medir de su repercusión en la vida real pero quizás su influencia vaya muy de la mano del desarrollo del robot SpotMini. Aunque quizás lo que actualmente mas destaque del capitulo sea las malas criticas que ha recibido y haya sido nombrado como el peor capitulo de la historia de black mirror.
-  </p>
-</article>
-
-
-</section>
-
-  <!-- Se deben hacer referencias cruzadas con la bibliografía o recursos en 
-  internet utilizados para realizar el análisis. Para ello se usará un identificador
-  en la lista de referencias de la forma: id = "refX", donde X es un número secuencial
-  y en el texto se incluirá la referencia cruzada, de la siguiente forma:
-   [<a href="#refX">X</a>]
-  -->
-
-
-
-<section class="principal" id="referencia">
-   <header class="titulo">
-  <div class="circleBase type1 titulo"></div>
-  <h1 class="section_title">Referencias</h1>
-  </header>
-  <article class="articulo">
-     <div class="referencia" id="ref1">
-     <div class="refIzq">
-      <h3 class="autor">OkDiario</h3>
-      <p class="visita">(última visita: 25/03/2018)</p>
-      </div>
-      <div class="refDer">
-        <p >El perro robot de Black Mirror ya es una realidad gracias a Boston Dynamics</p>
-      <p class="link"><a href=" https://okdiario.com/ciencia/2018/02/27/perro-robot-black-mirror-boston-dynamics-1879864"> https://okdiario.com/ciencia/2018/02/27/perro-robot-black-mirror-boston-dynamics-1879864</a></p>
-      </p>
-      </div>
-    </div>
-    <div id="ref2">
-      <div class="referencia" id="ref1">
-     <div class="refIzq">
-          <h3 class="autor">rastreadordecelular.org</h3>
-          <p class="visita">(última visita: 25/03/2018)</p>
-      </div>
-      <div class="refDer">
-          <p>Chip de rastreo ¿Qué es y para qué sirve?</p>
-          <p class="link"><a href="http://rastreadordecelular.org/chip-de-rastreo-que-es/">	http://rastreadordecelular.org/chip-de-rastreo-que-es</a></p>
-      </div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
      
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SeriesUsal</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="somos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+    					<a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Categorias</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Comedia</a>
+                    <a href="#" class="list-group-item">Ficción</a>
+                    <a href="#" class="list-group-item">Otras</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="img/juego-de-tronos.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/stranger-things.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/howimet.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/strangerp.png" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">2 temp.</h4>
+                                <h4><a href="producto2.html">Stranger Things</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/juego-de-tronosp.png" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">7 temp.</h4>
+                                <h4><a href="producto.html">Juego de Tronos</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">12 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/howimetp.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">9 temp.</h4>
+                                <h4><a href="producto.html">HIMYM</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/twd.jpg"0" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">8 temp.</h4>
+                                <h4><a href="producto.html">Walking Dead</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">6 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/naruto.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">2 temp.</h4>
+                                <h4><a href="producto.html">Naruto</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <h4><a href="#">¿Te gustan nuestros productos?</a>
+                        </h4>
+                        <p>En breve tendremos más, ¡atento a nuestras novedades! Si quieres tener más información sobre la IPO-SHOP, contacta con nosotros</p>
+                        <a class="btn btn-primary" href="contacto.html">Contactar</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+    <!-- /.container -->
 
-     <div id="ref3">
-           <div class="referencia" id="ref1">
-   		   <div class="refIzq">
-     		 <h3 class="autor">Boston Dynamics</h3>
-           </div>
-           <div class="refDer">
-              <p >The New SpotMini</p>
-              <p class="link"><video width="640" height="480" controls>
-          <source src="img/The New SpotMini.mp4" type="video/mp4"></video></p>
-          </div>
+    <div class="container">
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                <hr>
+                    <p>Copyright &copy; <a href="http://startbootstrap.com/">Start Bootstrap</a> &amp; IPO USAL 2018</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    
-   
-  </article>
-</div>
-</section>
+    <!-- /.container -->
 
-<footer> 
-<!--		<div><a href="http://usal.es/" target="_blank">Usal.es</a>
-		</div>
-		<div>	<a href="https://www.netflix.com/es/title/70264888" target="_blank">Black Mirror</a>
-		</div>	
-        <div>	<a href="mailto@jafm1994@usal.es" target="_blank">Jose Antonio Fernandez Molina</a>
-		</div>	
-        
--->
-</footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-  <!-- <script src="js/plugins.js"></script> -->
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <!--   <script>
-      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
